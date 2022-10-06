@@ -1,0 +1,35 @@
+@startuml
+!pragma layout smetana
+
+Class Building
+Class Main
+Class Room
+
+Building : - final ArrayList<Room> rooms
+Building : - int numberOfBathrooms
+Building : - int numberOfFloors
+Building : - boolean isOfficeBuilding
+
+Building : + Building(ArrayList<Room> rooms, int numberOfBathrooms,int numberOfFloors, boolean isOfficeBuilding)
+Building : + ArrayList<Room> getRooms()
+Building : + int getNumberOfBathrooms()
+Building : + int getNumberOfFloors()
+Building : + boolean isOfficeBuilding()
+
+Main : + static void main(String[] args)
+Main : + static int countLampsInBuild(Building building)
+Main : + static boolean isNormal (Building build)
+
+Room : - int numberOfDoors
+Room : - int numberOfLamps
+Room : - int numberOfWindows
+Room : + Room(int numberOfDoors, int numberOfLamps, int numberOfWindows)
+Room : + int getNumberOfDoors()
+Room : + int getNumberOfLamps()
+Room : + int getNumberOfWindows()
+
+Main *-- Building
+Building *-- Room
+
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+!pragma layout smetana
+
+Class Car
+Class Driver
+Class Main
+
+Car : - String make
+Car : - String model
+Car : - int year
+Car : - String bodyStyle
+Car : - Driver driver
+Car : + Car(String make, String model, int year, String bodyStyle)
+Car : + Driver getDriver()
+Car : + void setDriver(Driver driver)
+Car : + String toString()
+
+Driver : - String name
+Driver : - int age
+Driver : + Driver (String name, int age)
+Driver : + String toString()
+
+Main : + static void main(String[] args)
+
+
+Main *-- Car
+Car *-- Driver
+
+
+@enduml
