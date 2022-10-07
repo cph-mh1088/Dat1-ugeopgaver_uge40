@@ -9,12 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //instiate three diffrent rooms
+        //create three diffrent rooms
         Room room0 = new Room(1, 2, 1);
         Room room1 = new Room(2, 3, 2);
         Room room2 = new Room(3, 4, 3);
 
-        //Add the three rooms to a collection.
+        //Add the three rooms to collection.
         ArrayList<Room> collection = new ArrayList<>();
         collection.add(room0);
         collection.add(room1);

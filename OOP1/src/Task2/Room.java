@@ -8,7 +8,7 @@ public class Room {
     private int numberOfWindows;
 
 
-    //constructor
+    //constructor. Initializes the fields.
     public Room(int numberOfDoors, int numberOfLamps, int numberOfWindows){
         this.numberOfDoors = numberOfDoors;
         this.numberOfLamps = numberOfLamps;

@@ -1,11 +1,12 @@
 package Task3;
 
-//attributes
 public class Customer {
+
+    //fields
     private String firstName;
     private String lastName;
     private String userName;
-    int id;
+    private int id;
 
     @Override
     public String toString() {

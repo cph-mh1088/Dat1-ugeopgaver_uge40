@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class Main {
 
-     public static ArrayList<Customer>customers = new ArrayList<>();
-
     public static void main(String[] args) {
 
         Customer customer0 = new Customer("Olfert","Olfertsen","Olfert4Ever");
@@ -27,7 +25,9 @@ public class Main {
 
     }
 
-    //method. Print all customers via a for each loop
+    public static ArrayList<Customer>customers = new ArrayList<>();
+
+    //method. via a for each loop
     public static void printCustomers(ArrayList <Customer> customers){
         for ( Customer test : customers) {
             System.out.println(test);

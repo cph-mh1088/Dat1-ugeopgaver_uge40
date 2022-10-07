@@ -14,16 +14,11 @@ public class Main {
         car0.setDriver(driver0);
         car1.setDriver(driver1);
 
-
-
-
         //1.k print the toString method of the car you've created followed by the toString method of the driver.
         System.out.println(car0);
         System.out.println(driver0);
         System.out.println(car1);
         System.out.println(driver1);
-
-
 
     }
 
